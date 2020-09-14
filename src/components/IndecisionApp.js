@@ -17,6 +17,18 @@ class IndecisionApp extends React.Component{
         }
     }
 
+    componentDidMount(){
+        console.log('componentDidMount')
+    }
+
+    componentDidUpdate(){
+        console.log('componentDidUpdate')
+    }
+
+    componentWillUnmount(){
+        console.log('componentWillUnmount')
+    }
+
     handleAddOption(option){
         if(!option){
             return 'Enter valid value to add item'
