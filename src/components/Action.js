@@ -2,10 +2,14 @@ import React from 'react'
 
 class Action extends React.Component{
 
+    handlePick(){
+        alert("Action button is clicked")
+    }
+
     render(){
         return (
             <div>
-                <h2>What should I do?</h2>            
+                <button onClick={this.handlePick}>What should I do?</button>
             </div>
         )
     }
