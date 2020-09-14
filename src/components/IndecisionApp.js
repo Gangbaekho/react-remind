@@ -3,6 +3,7 @@ import Action from './Action'
 import AddOption from './AddOption'
 import Header from './Header'
 import Options from './Options'
+import StateLess from './StateLess'
 
 class IndecisionApp extends React.Component{
 
@@ -59,6 +60,7 @@ class IndecisionApp extends React.Component{
                 <Options options={this.state.options}
                 handleDeleteOptions = {this.handleDeleteOptions}/>
                 <AddOption handleAddOption = {this.handleAddOption}/>
+                <StateLess title={title} subtitle={subTitle}/>
             </div>
         )
     }
