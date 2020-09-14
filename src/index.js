@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Counter from './components/Counter'
-import Template from './components/Template'
+import IndecisionApp from './components/IndecisionApp'
 import VisibilityToggle from './components/VisibilityToggle'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VisibilityToggle/>
+    <IndecisionApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );

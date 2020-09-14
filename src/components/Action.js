@@ -2,14 +2,17 @@ import React from 'react'
 
 class Action extends React.Component{
 
-    handlePick(){
-        alert("Action button is clicked")
+    constructor(props){
+     super(props)
     }
 
     render(){
         return (
             <div>
-                <button onClick={this.handlePick}>What should I do?</button>
+                <button 
+                disabled={!this.props.hasOptions}
+                onClick={this.props.handlePick}
+                >What should I do?</button>
             </div>
         )
     }
