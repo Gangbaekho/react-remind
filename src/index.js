@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import Counter from './components/Counter'
 import Template from './components/Template'
+import VisibilityToggle from './components/VisibilityToggle'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter/>
+    <VisibilityToggle/>
   </React.StrictMode>,
   document.getElementById('root')
 );
