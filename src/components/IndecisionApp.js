@@ -4,6 +4,7 @@ import AddOption from './AddOption'
 import Header from './Header'
 import Options from './Options'
 import StateLess from './StateLess'
+import LocalStorage from './LocalStorage'
 
 class IndecisionApp extends React.Component{
 
@@ -19,14 +20,6 @@ class IndecisionApp extends React.Component{
 
     componentDidMount(){
         console.log('componentDidMount')
-    }
-
-    componentDidUpdate(){
-        console.log('componentDidUpdate')
-    }
-
-    componentWillUnmount(){
-        console.log('componentWillUnmount')
     }
 
     handleAddOption(option){
@@ -73,6 +66,7 @@ class IndecisionApp extends React.Component{
                 handleDeleteOptions = {this.handleDeleteOptions}/>
                 <AddOption handleAddOption = {this.handleAddOption}/>
                 <StateLess title={title} subtitle={subTitle}/>
+                <LocalStorage/>
             </div>
         )
     }

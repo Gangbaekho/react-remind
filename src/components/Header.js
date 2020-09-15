@@ -2,8 +2,11 @@ import React from 'react'
 
 class Header extends React.Component{
 
+    constructor(props){
+        super(props)
+    }
+
     render(){
-        console.log(this.props)
         return (
             <div>
                 <h1>{this.props.title}</h1>
